@@ -61,11 +61,11 @@ div.whitefont {
   color: white;
 }
 .center-left-desc {
-  padding-left: 52px;
+  padding-left: 62px;
 }
 .aboutbusterlunacy {
   color: #686868;
-  margin-left: 455px;
+  margin-left: 445px;
   font-weight: 400;
   font-size: 20px;
 }
