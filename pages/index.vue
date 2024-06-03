@@ -30,7 +30,7 @@
     <div class="aboutbusterlunacy">которые разработаны не</div>
     <div class="aboutbusterlunacy">маркетологами в пиджаках, а</div>
     <div class="aboutbusterlunacy">настоящими фанатами игр: lunacy</div>
-  </div>
+</div>
   
 </template>
   
@@ -68,6 +68,7 @@ div.whitefont {
   margin-left: 445px;
   font-weight: 400;
   font-size: 20px;
+
 }
 
 .aboutlunacy {
