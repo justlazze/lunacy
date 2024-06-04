@@ -15,21 +15,79 @@
       игровые девайсы
     </div>
     <div class="content__buybutton">
-      <b>[</b> купить <b>]</b>
+      <a href="#buy">
+        <b>[</b> купить <b>]</b>
+      </a>
     </div>
-    <div class="center aboutlunacy">у истоков <span class="whitefont">LUNACY</span></div>
-    <div class="center-right aboutlunacy">стоит</div>
-    <div class="whitefont center aboutlunacy">Слава Бустер</div>
-    <div class="left aboutlunacy">геймер, который знает какими</div>
-    <div class="left aboutlunacy">должны быть девайсы,</div>
-    <div class="center-left aboutlunacy">через него прошли десятки мышек,</div>
-    <div class="center-left aboutlunacy">клавиатур и наушников</div>
-    <div class="center-left aboutlunacy">именитых брендов</div>
-    <div class="center-left-desc aboutbusterlunacy">в поисках идеала он пришел</div>
-    <div class="aboutbusterlunacy">к идее своего бренда девайсов,</div>
-    <div class="aboutbusterlunacy">которые разработаны не</div>
-    <div class="aboutbusterlunacy">маркетологами в пиджаках, а</div>
-    <div class="aboutbusterlunacy">настоящими фанатами игр: lunacy</div>
+    <div class="content__aboutcompany">
+      <div class="center aboutlunacy">у истоков <span class="whitefont">LUNACY</span></div>
+      <div class="center-right aboutlunacy">стоит</div>
+      <div class="whitefont center aboutlunacy">Слава Бустер</div>
+      <div class="left aboutlunacy">геймер, который знает какими</div>
+      <div class="left aboutlunacy">должны быть девайсы,</div>
+      <div class="center-left aboutlunacy">через него прошли десятки мышек,</div>
+      <div class="center-left aboutlunacy">клавиатур и наушников</div>
+      <div class="center-left aboutlunacy">именитых брендов</div>
+      <div class="center-left-desc aboutbusterlunacy aboutbusterlunacystart">в поисках идеала он пришел</div>
+      <div class="aboutbusterlunacy">к идее своего бренда девайсов,</div>
+      <div class="aboutbusterlunacy">которые разработаны не</div>
+      <div class="aboutbusterlunacy">маркетологами в пиджаках, а</div>
+      <div class="aboutbusterlunacy aboutbusterlunacyend" id="buy">настоящими фанатами игр: lunacy</div>
+    </div>
+    <div class="content__product-background">
+      <div class="content__product-background-title">
+        ( lunacy in space )
+      </div>
+      <div class="content__product-background-inspace">
+        <img  class="keyboard" src="/source/img9.png" alt="">
+      </div>
+    </div>
+    <div class="content__buybutton">
+      <NuxtLink to="/LunacyInspace">
+      <b>[</b> купить <b>]</b>
+    </NuxtLink>
+    </div>
+    <div class="content__product-details">
+      <NuxtLink to="/LunacyInspace">
+      подробнее
+      </NuxtLink>
+    </div>
+    <div class="content__product-background">
+      <div class="content__product-background-title">
+        ( lunacy night )
+      </div>
+      <div class="content__product-background-night">
+        <img class="headphones" src="/source/img4.png" alt="">
+      </div>
+    </div>
+    <div class="content__buybutton">
+      <NuxtLink to="/LunacyNight">
+      <b>[</b> купить <b>]</b>
+    </NuxtLink>
+    </div>
+    <div class="content__product-details">
+      <NuxtLink to="/LunacyNight">
+      подробнее
+      </NuxtLink>
+    </div>
+    <div class="content__product-background">
+      <div class="content__product-background-title">
+        ( lunacy loud )
+      </div>
+      <div class="content__product-background-loud">
+        <img class="headphones" src="/source/img1.png" alt="">
+      </div>
+    </div>
+    <div class="content__buybutton">
+      <NuxtLink to="/LunacyLoud">
+      <b>[</b> купить <b>]</b>
+    </NuxtLink>
+    </div>
+    <div class="content__product-details">
+      <NuxtLink to="/LunacyLoud">
+      подробнее
+      </NuxtLink>
+    </div>
 </div>
   
 </template>
@@ -40,6 +98,49 @@
 </script>
 
 <style lang="scss">
+
+.content__product-details {
+  color: #FFFFFF;
+  opacity: 50%;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.content__product-background {
+  color: #B6B6B6;
+  position: relative;
+  font-size: 45px;
+  width: 459px;
+  height: 646px;
+  background: #686868;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  &-title {
+    text-align: center;
+    padding-top: 30px;
+  }
+  &-inspace {
+    position: absolute;
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &-night {
+    position: absolute;
+    top: 57.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &-loud {
+    position: absolute;
+    top: 57.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
 
 
 span.whitefont {
@@ -68,6 +169,12 @@ div.whitefont {
   margin-left: 445px;
   font-weight: 400;
   font-size: 20px;
+  &end {
+    margin-bottom: 180px;
+  }
+  &start {
+    margin-top: 20px;
+  }
 
 }
 
@@ -75,6 +182,7 @@ div.whitefont {
   color: #B6B6B6;
   font-size: 45px;
   font-weight: 500;
+  line-height: 40.5px;
 }
 
 img.busterimg {
@@ -91,21 +199,26 @@ left: -292px;
 
 .content__ {
   margin-top: 75px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &title {
     color: #B6B6B6;
     font-size: 34px;
     font-weight: 500;
     text-align: center;
-    margin-top: -10px;
     letter-spacing: -2px;
   }
   &buybutton {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 34px;
+    margin-top: 24px;
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 180px;
+  }
+  &aboutcompany {
+    margin-top: 180px;
   }
 
 }
