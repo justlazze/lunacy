@@ -95,9 +95,13 @@
 
 <script>
 
+
+
 </script>
 
 <style lang="scss">
+
+
 
 .content__product-details {
   color: #FFFFFF;
